@@ -1,6 +1,8 @@
 # Regex || Matching HEX Values
 
-This is a short tutorial to showcase how to use a regular expression (regex), to **Match HEX Values**.
+This is a short tutorial breaking down a specific regular expression  (**Match HEX Values**).
+
+However, rules/examples/actions are NOT exclusive to this regex and can be used in many others.
 
 ## Summary
 
