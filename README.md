@@ -1,8 +1,8 @@
 # Regex || Matching HEX Values
 
-This is a short tutorial breaking down a specific regular expression  (**Match HEX Values**).
+This is a short tutorial breaking down a specific regular expression  (**Matching HEX Values**).
 
-However, rules/examples/actions are NOT exclusive to this regex and can be used in many others.
+However, rules/examples and actions are NOT exclusive to this expression and can be used in many others.
 
 ## Summary
 
@@ -35,11 +35,11 @@ Description: Anchors purpose is to mark the **beginning** and **end** of a strin
 
 Example: `^The` indicates that the string must begin with `The`
 
-Snipet: `/^`
+Our Snipet: `/^`
 
 Example: `$End` indicates that the string must end with `End`
 
-Snipet: `$/`
+Our Snipet: `$/`
 
 ### Quantifiers
 Quantifiers: ?
@@ -48,7 +48,7 @@ Quantifiers: {}
 
 Description: {-} Tells how many times the previous pattern is matching. Using ? makes it so our regular expression will match as **few** occurrences as it can. In our expression it does not have one so it will match as **many** occurrences as it can.
 
-Snipet: `{3}`
+Our Snipet: `{3}`
 
 ### OR Operator
 
@@ -56,7 +56,7 @@ OR Operator: |
 
 Description: | is a boolean that matches either the expression before or after it is done.
 
-Code Snipet: `[a-f0-9]{6}|[a-f0-9]{3}`
+Our Snipet: `[a-f0-9]{6}|[a-f0-9]{3}`
 
 
  match with 3 character string containing lower case a-f and/or integer 0-9 OR (|) a string with 6 characters containing lowercase a-f and/or integer between 0-9. Anything outside of 3-6 characters will not match.
@@ -64,7 +64,7 @@ Code Snipet: `[a-f0-9]{6}|[a-f0-9]{3}`
 ### Character Classes
 Description: Character classes help us define a range of what single characters are being used in our expression. In our case, we see multiple using a single dash to say we want all of those numbers or letters between.
 
-Snipet: `a-f0-9`
+Our Snipet: `a-f0-9`
 
 Example: `[a-f]` This matches a single character inbetween a and f
 
@@ -75,7 +75,7 @@ Example: `[0-9]` This matches a single number inbetween 0 and 9
 ### Grouping and Capturing
 Grouping and Capturing: ()
 
-Snipet: `([a-f0-9]{6}|[a-f0-9]{3})`
+Our Snipet: `([a-f0-9]{6}|[a-f0-9]{3})`
 
 Description: () is allowing us to group this regex together and display is as an array to be further index'd
 
@@ -84,7 +84,7 @@ In this specific case we are working with a bracket expression and that is ended
 ### Bracket Expressions
 Bracket Expression: []
 
-Snipet: `[a-f0-9]`
+Our Snipet: `[a-f0-9]`
 
 Description: a bracket expression is a regex that will match a pattern. We can put things inside the brackets to define our desired range of (alphabetic, numeric, special characters, symbols etc..)
 
@@ -115,6 +115,10 @@ Snipet: `/1`
 
 ### Look-ahead and Look-behind
 Description: Collectively called "lookaround", are "zero-length assertions" similar to anchors. Lookarounds **match** characters and return "match" or "no match". They simply assert weather a match is possible or not.
+
+### References
+https://www.regular-expressions.info
+https://www.rexegg.com/
 
 ## Author
 GitHub: https://github.com/DylanSchmidt2
